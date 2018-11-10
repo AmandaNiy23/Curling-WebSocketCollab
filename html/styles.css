@@ -1,8 +1,3 @@
-/* an external style sheet
-
-   notice the use of c-style comments and not xhtml-style
-   comments
-   */
   body {color: orange; background-color: grey;}
   table {color: orange;
          background-color: #000000;
