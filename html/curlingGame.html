@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+- Example shows drawing strings on the canvas and
+  dragging individual strings around with the mouse.
+
+  In this example the HTML elements are not being
+  dragged. The strings are javascript objects.
+
+  When the canvas reacts to the mouse down event
+  other event handlers will be added to the DOM
+  to handle the mouse move and mouse release
+
+  Notice in this source file there are no pre-attached
+  event handlers. They will be added using jQuery in the
+  supporting javascript file.
+
+
+-->
+<html>
+   <head>
+     <title>Canvas Size</title>
+     <script src="jquery-1.11.3.js"></script>
+
+      <style>
+         body {
+            background: #dddddd;
+         }
+
+      </style>
+   </head>
+   <script src="/socket.io/socket.io.js"></script>
+  <script>
+    //connect to server and retain the socket
+    const socket = io('http://' + window.document.location.host)
+    //var socket = io('http://localhost:3000')
+  </script>
+  <body>
+
+
+    <canvas id="canvasCloseup" class='part' width=600 height=600></canvas>
+    <canvas id="canvasRight" class='part' width=200 height=600></canvas>
+
+    <div>
+      <input type="button" value="Player 1" onClick="handlePlayer1Button()" />
+      <input type="button" value="Player 2" onClick="handlePlayer2Button()" />
+
+      <input type="button" value ="Player 1 Quit" onClick="handleP1QuitButton()">
+      <input type="button" value = "Player 2 Quit" onClick="handleP2QuitButton()">
+
+
+    </div>
+
+    <div id="text-area1">
+  	</div>
+
+  </div>
+
+  <div id="text-area2">
+  </div>
+
+    <div id="play-by-play">
+  	</div>
+
+    <script src='canvas.js'></script>
+
+
+  </body>
+</html>

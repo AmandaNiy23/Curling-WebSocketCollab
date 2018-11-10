@@ -1,0 +1,62 @@
+/* an external style sheet
+
+   notice the use of c-style comments and not xhtml-style
+   comments
+   */
+  body {color: orange; background-color: grey;}
+  table {color: orange;
+         background-color: #000000;
+         }
+  caption {font-size: 24pt;
+           font-weight: bold;
+        font-family: Georgia "Courier New";
+        }
+
+  td,th {padding: 20px;}
+
+  #left {
+    position: relative;
+    float: left;
+    width: 44%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #right {
+    position: relative;
+    float: right;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container{
+    position:relative;
+    border:1px solid gold;
+    width:1200px;
+    height:1000px;
+  }
+
+  .part{
+    position:absolute;
+  }
+
+  #canvasCloseup{
+    left:0;
+    top:0px;
+    border:thin inset #aaaaaa;
+  }
+
+  #canvasRight{
+    left:600px;
+    border: thin inset #aaaaaa;
+  }
+
+
+  .divider{
+      position:absolute;
+      left: 60%;
+      top:0%;
+      bottom:0%;
+      border-left:1px solid black;
+  }
