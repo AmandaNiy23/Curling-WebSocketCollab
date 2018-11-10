@@ -12,7 +12,7 @@ Install: Open a terminal to the same directory as your server.js code and execut
 
 Launch:  node server.js
 
-Testing: Use Chrome browser to visit: http://localhost:3000/Assignment3.html
+Testing: Use Chrome browser to visit: http://localhost:3000/curlingGame.html
 	 
          Taking control of stones: - If the stones are grey, that means you can join the game
                                    - Click "Player 1" or "Player 2" button to join (depending on which is available)
@@ -30,4 +30,4 @@ Testing: Use Chrome browser to visit: http://localhost:3000/Assignment3.html
                                    - Exiting the game by exiting the window is not a valid exit method
                                    - When a player leaves the game, the remaining participant is notified and told that the game will resume when someone joins the game
                                    - When a player leaves the game, spectators are notified that they can now join
-                                   
+
