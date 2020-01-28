@@ -12,7 +12,7 @@ Install: Open a terminal to the same directory as your server.js code and execut
 
 Launch:  node server.js
 
-Testing: Use Chrome browser to visit: http://localhost:3000/curlingGame.html
+Testing: Use Chrome browser to visit: http://localhost:3000
 	 
          Taking control of stones: - If the stones are grey, that means you can join the game
                                    - Click "Player 1" or "Player 2" button to join (depending on which is available)
