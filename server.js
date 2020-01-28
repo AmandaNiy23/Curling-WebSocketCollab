@@ -152,3 +152,7 @@ io.on('connection', function(socket){
     io.emit('aimingData', data) //broadcast to everyone including sender
   })
 })
+
+console.log("Server Running at PORT: 3000  CNTL-C to quit")
+console.log("To Test:")
+console.log("Open several browsers at: http://localhost:3000")
