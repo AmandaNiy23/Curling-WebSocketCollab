@@ -59,7 +59,7 @@ function handler(request, response) {
   console.log("METHOD: " + request.method)
 
   let filePath = ROOT_DIR + urlObj.pathname
-  if (urlObj.pathname === '/') filePath = ROOT_DIR + '/index.html'
+  if (urlObj.pathname === '/') filePath = ROOT_DIR + '/curlingGame.html'
 
   fs.readFile(filePath, function(err, data) {
     if (err) {
@@ -152,8 +152,3 @@ io.on('connection', function(socket){
     io.emit('aimingData', data) //broadcast to everyone including sender
   })
 })
-
-
-console.log("Server Running at PORT: 3000  CNTL-C to quit")
-console.log("To Test:")
-console.log("Open several browsers at: http://localhost:3000/curlingGame.html")
